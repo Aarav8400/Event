@@ -12,7 +12,7 @@ const Contact = () => {
     e.preventDefault();
     await axios
       .post(
-        "http://localhost:4000/api/v1/message/send",
+        "https://cute-blue-penguin-slip.cyclic.app/api/v1/messge/send",
         {
           name,
           email,
