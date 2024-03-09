@@ -8,12 +8,6 @@ const app = express();
 
 dotenv.config({ path: "./config/config.env" });
 
-app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', 'https://event-red.vercel.app')
-  next();
-});
-
-
 app.use(
   cors({
     origin: [process.env.FRONTEND_URL],
