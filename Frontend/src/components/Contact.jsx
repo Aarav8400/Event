@@ -12,7 +12,7 @@ const Contact = () => {
     e.preventDefault();
     await axios
       .post(
-       "https://cute-blue-penguin-slip.cyclic.app/api/v1/messge/send}",
+        "https://cute-blue-penguin-slip.cyclic.app/api/v1/message/send",
         {
           name,
           email,
@@ -21,7 +21,7 @@ const Contact = () => {
         },
         {
           withCredentials: true,
-          headers: { "Content-Type": "application/json" }
+          headers: { "Content-Type": "application/json" },
         }
       )
       .then((res) => {
