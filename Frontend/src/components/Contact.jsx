@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import toast from "react-hot-toast";
+const corsAnywhereUrl = 'https://cors-anywhere.herokuapp.com/';
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -12,7 +13,7 @@ const Contact = () => {
     e.preventDefault();
     await axios
       .post(
-        "https://cute-blue-penguin-slip.cyclic.app/api/v1/messge/send",
+        `${corsAnywhereUrl}`+"https://cute-blue-penguin-slip.cyclic.app/api/v1/messge/send}",
         {
           name,
           email,
