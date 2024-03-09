@@ -21,7 +21,7 @@ const Contact = () => {
         },
         {
           withCredentials: true,
-          headers: { "Content-Type": "application/json" },
+          headers: { "Content-Type": "application/json" ,'Origin': 'https://event-red.vercel.app'}
         }
       )
       .then((res) => {
